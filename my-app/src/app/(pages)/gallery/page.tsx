@@ -3,11 +3,23 @@ import { useState } from 'react';
 import Link from 'next/link';
 import './gallery.css';
 
+interface Artwork {
+  id: number;
+  title: string;
+  artist: string;
+  price: number;
+  description: string;
+  medium: string;
+  size: string;
+  year: number;
+  image: string;
+}
+
 const GalleryPage = () => {
-  const [selectedArtwork, setSelectedArtwork] = useState(null);
+  const [selectedArtwork, setSelectedArtwork] = useState<Artwork | null>(null);
 
   // This would typically fetch from an API
-  const artworks = [
+  const artworks: Artwork[] = [
     {
       id: 1,
       title: 'Abstract Harmony',

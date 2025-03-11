@@ -46,7 +46,7 @@ const LoginPage = () => {
         </form>
 
         <div className="register-prompt">
-          <p>Don't have an account? <Link href="/register">Sign Up</Link></p>
+          <p>Don&apos;t have an account? <Link href="/register">Sign Up</Link></p>
         </div>
       </div>
     </div>
