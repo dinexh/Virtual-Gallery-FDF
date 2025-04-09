@@ -33,6 +33,9 @@ const Home = () => {
             <Link href="/gallery" className="btn">
               ENTER GALLERY
             </Link>
+            <Link href="/virtual-tour" className="btn btn-outline">
+              VIRTUAL TOUR
+            </Link>
           </div>
         </div>
       </section>
